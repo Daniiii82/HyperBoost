@@ -6,76 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
     <link rel="icon" href="Imagenes/IconoYlogo.png">
+    <link rel="stylesheet" href="assets/Estilos/style.css">
 </head>
 
 <body>
-    <style>
-        /* Esto es para darle formato a la pagina con colores  */
-        body {
-            background: linear-gradient(rgb(88, 50, 50), black);
-            font-family: Arial;
-        }
 
-        h1 {
-            color: white;
-        }
-
-        h3 {
-            color: white;
-        }
-
-        p {
-            color: white;
-        }
-    </style>
     <header>
+
+        <h1>HyperBoost</h1>
         <center>
-            <h1>HyperBoost</h1>
-            <img src="Imagenes/IconoYlogo.png" alt="Logo HyperBoost" width="200px" height="200px">
+            <img src="assets/Imagenes/IconoYlogo.png" alt="Logo HyperBoost" class="imagen_contacto">
         </center>
     </header>
     <main>
-        <form action="datos.txt">
-            <fieldset>
-                <legend>
-                    <h3>Informacion de contacto</h3>
-                </legend>
-                <label for="nombre" style="color: white;">Ingrese su nombre:</label>
-                <br>
-                <input type="text" name="nombre" id="nombre" required><br><br>
+        <center>
+            <div id="formulario">
+                <form action="datos.txt">
+                    <fieldset>
+                        <legend>
+                            <h3>Informacion de contacto</h3>
+                        </legend>
+                        <label for="nombre">Ingrese su nombre:</label>
+                        <br>
+                        <input type="text" name="nombre" id="nombre" required><br><br>
 
-                <label for="apellido" style="color: white;">Ingrese sus apellidos:</label>
-                <br>
-                <input type="text" name="apellido" id="apellido" required><br><br>
+                        <label for="apellido">Ingrese sus apellidos:</label>
+                        <br>
+                        <input type="text" name="apellido" id="apellido" required><br><br>
 
-                <label for="numero" style="color: white;">Ingrese su numero celular:</label>
-                <br>
-                <input type="text" name="numero" id="numero" required> <br> <br>
+                        <label for="numero">Ingrese su numero celular:</label>
+                        <br>
+                        <input type="text" name="numero" id="numero" required> <br> <br>
 
-                <label for="modelo" style="color: white;">El modelo del carro</label>
-                <br>
-                <input type="text" name="modelo" id="modelo" required placeholder="Ej: Accent 2001"> <br> <br>
+                        <label for="modelo">El modelo del carro</label>
+                        <br>
+                        <input type="text" name="modelo" id="modelo" required placeholder="Ej: Accent 2001"> <br> <br>
 
 
-                <label for="correo" style="color: white;">Ingrese su correo:</label>
-                <br>
-                <input type="email" name="correo" id="correo" required> <br> <br>
-
-                <p>Marque la opcion de tu interes:</p> <!-- Estos son las casillas de marcar -->
-                <input type="radio" name="turbo" id="turbo">
-                <label for="turbo" style="color: white;">GTX3582R</label><br>
-                <input type="radio" name="turbo" id="turbo">
-                <label for="turbo" style="color: white;">T04E</label><br>
-                <input type="radio" name="turbo" id="turbo">
-                <label for="turbo" style="color: white;">HyperBoost-XTR-900</label><br><br>
-                <input type="submit">
-            </fieldset>
-        </form>
-        <br><br><br><br><br><br>
+                        <label for="correo">Ingrese su correo:</label>
+                        <br>
+                        <input type="email" name="correo" id="correo" required> <br> <br>
+                        <label for="pais">Ingrese el país</label>
+                        <br>
+                        <input type="text" name="pais" id="pais" placeholder="Costa Rica" disabled>
+                        <p>Marque la opcion de tu interes:</p> <!-- Estos son las casillas de marcar -->
+                        <input type="radio" name="turbo" id="turbo">
+                        <label for="turbo">GTX3582R</label><br>
+                        <input type="radio" name="turbo" id="turbo">
+                        <label for="turbo">T04E</label><br>
+                        <input type="radio" name="turbo" id="turbo">
+                        <label for="turbo">HyperBoost-XTR-900</label><br><br>
+                        <input type="submit">
+                    </fieldset>
+                </form>
+            </div>
+            <br><br><br>
     </main>
+    </center>
     <footer><!-- esto es para que no se haga copia de este sitio -->
-        <p> &copy; Reservados los derechos a HyperBoost2026 || <a href="HyperBoost Base.html"
-                style="color: rgb(247, 203, 108);">Volver al Inicio</a></p>
+        <p> &copy; Reservados los derechos a HyperBoost2026 || <a href="HyperBoost Base.html">Volver al Inicio</a></p>
     </footer>
 </body>
 

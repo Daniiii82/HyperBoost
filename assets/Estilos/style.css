@@ -1,11 +1,80 @@
-
 body {
     background: linear-gradient(rgb(88, 50, 50), black);
-     font-family: Arial, Helvetica, sans-serif;
-     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
 }
-#inicio{
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0 5px 8px black;
+    font-size: 50px;
+}
+
+span {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    margin: 5px;
+    background: radial-gradient(rgb(185, 131, 131), rgb(30, 27, 27));
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(247, 203, 108);
+}
+
+span:hover {
+    background: radial-gradient(rgb(30, 27, 27), rgb(185, 131, 131));
+    color: white;
+    text-decoration: underline;
+}
+
+.logo {
+    height: 300px;
+    width: 300px;
+}
+
+#info_empresa {
+    column-count: 2;
+    column-rule: 10px white;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.imagen_contacto {
+    height: 200px;
+    width: 200px;
+
+
+}
+
+#formulario {
+    height: 500px;
+    width: 400px;
+
+}
+
+.infoturbos {
+    font-size: large;
+}
+
+.imagenesturbos {
+    width: 350px;
+    height: 300px;
+}
+.lolo{
+    background: radial-gradient(rgb(185, 131, 131), rgb(30, 27, 27) );
+    padding: 50px;
+    width: 800px;
+    margin: 50px;
+ 
+}
+#orden{
     display: flex;
     justify-content: center;
 }
-
