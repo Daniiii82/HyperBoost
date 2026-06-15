@@ -1,11 +1,13 @@
-body {
+
+/* Este style se le adapto a todos los sitios */
+body { /* aca se va a poner el mismo fondo, fuente y color de letra a todos los sitios */
     background: linear-gradient(rgb(88, 50, 50), black);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 
 }
 
-h1 {
+h1 { /* a todos los titulos se les va a adaptar esto */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -13,7 +15,7 @@ h1 {
     font-size: 50px;
 }
 
-span {
+span { /* Sirve para darle estilos a los botones que redirigen a las otras paginas */
     height: 20px;
     width: 20px;
     padding: 5px;
@@ -22,59 +24,152 @@ span {
     color: white;
     text-decoration: none;
 }
-
-a {
-    text-decoration: none;
-    color: rgb(247, 203, 108);
-}
-
-span:hover {
+span:hover { /* cuando pongan el mouse encima cambia a esta confi */
     background: radial-gradient(rgb(30, 27, 27), rgb(185, 131, 131));
     color: white;
     text-decoration: underline;
 }
 
-.logo {
-    height: 300px;
-    width: 300px;
+a { /* es para cambiarle el color a los volver al inicio */
+    text-decoration: none;
+    color: rgb(247, 203, 108);
 }
 
-#info_empresa {
+
+
+.logo { /* tamaño del logo */
+    height: 300px;
+    width: 300px;
+
+}
+
+#info_empresa { /* llamado por id  */
     column-count: 2;
     column-rule: 10px white;
     padding-left: 200px;
     padding-right: 200px;
 }
 
-.imagen_contacto {
+.imagen_contacto { /* llamado por clase */
     height: 200px;
     width: 200px;
 
 
 }
 
-#formulario {
+#formulario { /* llamado por id  */
     height: 500px;
     width: 400px;
 
 }
 
-.infoturbos {
+.infoturbos { /* llamado por clase */
     font-size: large;
 }
 
-.imagenesturbos {
+.imagenesturbos { /* llamado por clase */
     width: 350px;
     height: 300px;
 }
-.lolo{
-    background: radial-gradient(rgb(185, 131, 131), rgb(30, 27, 27) );
+
+.contenedorturbos { /* llamado por clase */
+    background: radial-gradient(rgb(185, 131, 131), rgb(30, 27, 27));
     padding: 50px;
     width: 800px;
     margin: 50px;
- 
+    box-shadow: 5px 5px 8px red;
+    border-radius: 30px;
+    border-color: white;
+
 }
-#orden{
+
+#orden { /* llamado por id  */
     display: flex;
     justify-content: center;
+}
+
+.imagencircular { /* llamado por clase */
+    width: 350px;
+    height: 300px;
+    border-radius: 30%;
+    object-fit: cover;
+    filter: blur(2px);
+
+}
+
+.imagencircular:hover { /* cuando pongan el mouse encima se quita lo borroso */
+    filter: none;
+}
+
+#colorcambiante { /* llamado por id*/ 
+
+    animation: mianimacion 2s infinite;
+}
+
+@keyframes mianimacion { /* crear la animacion de los precios */
+    from {
+        background-color: rgb(246, 59, 59);
+    }
+
+    to {
+        background-color: rgb(114, 13, 3);
+    }
+}
+
+.imagengirada { /* llamado por clase */
+    width: 350px;
+    height: 300px;
+    transform: rotate3d(1, 2, 1, 45deg);
+
+}
+table,th,tr, td{ /* configuracion de la  tabla */
+border-style:solid ;
+border-collapse: collapse;
+border-color: rgb(119, 20, 20);
+ overflow-x: auto;
+
+}
+th, tr,td{ /* configuracion de la  tabla */
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+}
+table{ /* configuracion de la  tabla */
+    box-shadow: 5px 5px 8px red;
+   
+    width: 500px;
+}
+th{ /* configuracion de la  tabla */
+    background: linear-gradient(rgb(88, 50, 50), black);
+}
+tr:nth-child(even){ /* el cebra */ 
+    background: linear-gradient(rgba(225, 155, 155, 0.593), rgb(70, 28, 28));
+}
+td:hover{ /* cuando pongan el mouse encima se pone color rojo*/
+    background-color: red;
+}
+.logomoviendose{/* llamado por clase */
+  
+    height: 250px;
+    width: 250px;
+ 
+   position: relative;
+   animation-name: mianimacionmov;
+   animation-duration: 6s;  
+}
+@keyframes mianimacionmov{ /* animacion del logo que se mueva alrededor de la tabla */
+0% { left: 0px; top: 0px;}
+30%{left: 400px;top: 0px;}
+50% {left: 400px; top: 650px;}
+70% {left:-400px ; top: 650px;}
+80%{left: -400px; top: 0px;}
+100% { left: 0px; top: 0px;}
+}
+button{ /* darle estilo al boton del formulario */
+    background-color: rgb(226, 49, 49);
+    color: white;
+    box-shadow: 5px 5px 8px red;
+    border-color: white;
+    width: 80px;
+    height: 30px;
 }
