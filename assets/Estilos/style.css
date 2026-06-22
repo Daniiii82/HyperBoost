@@ -1,8 +1,16 @@
-*, *::before, *::after{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-color: white;
+* {
+
+    box-sizing: border-box;
+
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
 }
 
 
@@ -60,8 +68,8 @@ a {
 
 .logo {
     /* tamaño del logo */
-    height: 300px;
-    width: 300px;
+    max-width: 30%;
+    height: auto;
 
 }
 
@@ -75,16 +83,16 @@ a {
 
 .imagen_contacto {
     /* llamado por clase */
-    height: 200px;
-    width: 200px;
+    max-width: 20%;
+    height: auto;
 
 
 }
 
 #formulario {
     /* llamado por id  */
-    height: 500px;
-    width: 400px;
+    max-width: 30%;
+    height: auto;
 
 }
 
@@ -95,8 +103,8 @@ a {
 
 .imagenesturbos {
     /* llamado por clase */
-    width: 350px;
-    height: 300px;
+    max-width: 40%;
+    height: auto;
 }
 
 .contenedorturbos {
@@ -119,8 +127,8 @@ a {
 
 .imagencircular {
     /* llamado por clase */
-    width: 350px;
-    height: 300px;
+    max-width: 40%;
+    height: auto;
     border-radius: 30%;
     object-fit: cover;
     filter: blur(2px);
@@ -152,8 +160,8 @@ a {
 
 .imagengirada {
     /* llamado por clase */
-    width: 350px;
-    height: 300px;
+    max-width: 40%;
+    height: auto;
     transform: rotate3d(1, 2, 1, 45deg);
 
 }
@@ -205,8 +213,8 @@ td:hover {
 .logomoviendose {
     /* llamado por clase */
 
-    height: 250px;
-    width: 250px;
+    max-width: 20%;
+    height: auto;
 
     position: relative;
     animation-name: mianimacionmov;
@@ -260,4 +268,64 @@ button {
 button:hover {
     background-color: rgb(226, 49, 49);
     transform: translateY(-5px)
+}
+
+/* Computadoras grandes */
+@media  (min-width: 1200px) {
+    .contenedorturbos {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #info_empresa {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #orden {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info_empresa {
+        column-count: 1;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contenedorturbos {
+        width: 90%;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    span {
+        margin: 10px;
+    }
+
+}
+
+
+/* Celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 25px;
+    }
+    p{
+        font-size: 2px;
+    }
 }
